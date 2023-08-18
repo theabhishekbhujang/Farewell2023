@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Uploader</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Uploader</h1>
+        <form id="uploadForm">
+            <label for="imageInput">Select images:</label>
+            <input type="file" id="imageInput" accept="image/*" multiple required>
+            <button type="button" onclick="uploadImages()">Upload Images</button>
+            <div id="uploadStatus" class="upload-status">
+                <div class="spinner"></div>
+                <p>Uploading...</p>
+            </div>
+            <p id="uploadResult"></p>
+        </form>
+    </div>
+
+    <script src="image-uploader.js"></script>
+</body>
+</html>
